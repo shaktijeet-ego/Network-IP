@@ -1,11 +1,14 @@
 import socket
 import re
+import datetime
 
 from regex import regex
 
 hostname = socket.gethostname()
 IPAddr = socket.gethostbyname(hostname)
 Timeoout = socket.getdefaulttimeout()
+timeNow = datetime.datetime.now()
+print("The current time is: " + str(timeNow))
 print("hostname is : " + hostname)
 print("Ip address: " + IPAddr)
 print("Timeoout: " + str(Timeoout))
