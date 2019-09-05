@@ -8,10 +8,15 @@ hostname = socket.gethostname()
 IPAddr = socket.gethostbyname(hostname)
 Timeoout = socket.getdefaulttimeout()
 timeNow = datetime.datetime.now()
+print("\n\n**System built to find the ip of the computer in which this software is hosted in**")
+print("**Used for test purposes**")
+print("-----------------------------------------------")
 print("The current time is: " + str(timeNow))
+print("------------------------------------------------")
 print("hostname is : " + hostname)
 print("Ip address: " + IPAddr)
 print("Timeoout: " + str(Timeoout))
+print("------------------------------------------------")
 
 regex = '''^(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.( 
             25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.( 
